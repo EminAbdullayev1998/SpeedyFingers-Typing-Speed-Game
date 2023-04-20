@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.3"
+  },
+  "name": "speedyfingers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server-json": "json-server db.json --watch --port 5000"
+  },
+  "author": "Emin Abdullayev",
+  "license": "ISC",
+  "description": "typing speed test game"
+}

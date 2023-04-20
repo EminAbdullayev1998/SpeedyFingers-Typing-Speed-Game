@@ -1,0 +1,187 @@
+@font-face {
+    font-family: Quartzo;
+    src: url('/fonts/Quartzo.otf');
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 750px;
+}
+
+section .container{
+    position: relative;
+    max-width: 1200px;
+    width: 70%;
+    height: 600px;
+}
+
+.container .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+
+.container .title h1{
+    font-family: Quartzo;
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #FF6D60;
+}
+
+.container .main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+.main-box .words-box{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-top: 10px;
+}
+
+.words-box span{
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.container .hero-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+
+.hero-box input{
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.hero-box input:focus{
+    outline: none;
+}
+
+.hero-box .time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: #3c4d5c;
+}
+
+.time p{
+    color: white;
+    font-size: 20px;
+}
+
+.hero-box .reset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #428bca;
+}
+
+.reset .fa-solid{
+    font-size: 25px;
+    color: white;
+}
+
+.container .score-modal{
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 300px;
+    left: -190px;
+    width: 400px;
+    height: 300px;
+    background-color: #F6F1E9;
+    border-radius: 5px;
+}
+
+.score-modal p{
+    font-size: 30px;
+    font-weight: 600;
+    color: blue;
+    margin-top: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.score-modal button{
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    color: white;
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.container .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 90px;
+}
+
+.footer .fa-heart{
+    color: red;
+    animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.footer p{
+    font-size: 25px;
+}
+
+.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #dddddd !important;
+}
+
+.correct{
+    color: green !important;
+}
+
+.wrong{
+    color: red !important;
+}
